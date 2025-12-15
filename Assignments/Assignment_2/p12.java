@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class Test{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the hypotenuse of triangle: ");
+        int hypotenuse = sc.nextInt();
+        System.out.println("Enter the base of triangle: ");
+        int base = sc.nextInt();
+        int height = Math.sqrt(hypotenuse * hypotenuse - base * base);
+        int area = (base * height)/2;
+        System.out.println(height);
+        System.out.println(area);
+    }
+}
